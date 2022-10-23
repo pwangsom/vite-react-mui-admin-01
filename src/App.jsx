@@ -1,8 +1,8 @@
 import * as React from 'react';
 
-import Navbar from './components/navbar/Navbar';
 import Home from './pages/home/Home'
 
+import Box from '@mui/material/Box';
 import { ThemeProvider } from "@mui/material";
 import { appTheme } from "./themes/theme";
 
@@ -10,7 +10,9 @@ import { appTheme } from "./themes/theme";
 function App() {
   return (
     <ThemeProvider theme={appTheme}>
-      <Home />
+      <Box sx={{ flexGrow: 1 }}>
+          <Home />
+      </Box>
     </ThemeProvider>
   )
 }
