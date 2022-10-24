@@ -8,7 +8,7 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
 
-function Navbar() {
+function Navbar({mode, setMode}) {
 
     return (
         <Box sx={{ flexGrow: 1 }}>
@@ -18,7 +18,7 @@ function Navbar() {
 
                     <Box sx={{ flexGrow: 1 }} />
 
-                    <ThemeMode />
+                    <ThemeMode setMode={setMode} mode={mode} />
                     <Button color="inherit">Logout</Button>
                 </Toolbar>
             </AppBar>

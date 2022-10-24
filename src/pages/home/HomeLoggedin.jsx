@@ -3,10 +3,10 @@ import NavbarLoggedin from "../../components/NavbarLoggedin"
 import React from 'react'
 import Box from '@mui/material/Box';
 
-const HomeLoggedin = () => {
+const HomeLoggedin = ({mode, setMode}) => {
   return (
     <Box>
-        <NavbarLoggedin />
+        <NavbarLoggedin setMode={setMode} mode={mode} />
     </Box>
   )
 }
