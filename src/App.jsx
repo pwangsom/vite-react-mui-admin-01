@@ -2,6 +2,7 @@ import * as React from 'react';
 
 import Home from './pages/home/Home'
 import HomeLoggedin from './pages/home-loggedin/HomeLoggedin';
+import ResponsiveAppBar from './components/NavbarTS';
 
 import Box from '@mui/material/Box';
 import { ThemeProvider } from "@mui/material";
@@ -12,7 +13,7 @@ function App() {
   return (
     <ThemeProvider theme={appTheme}>
       <Box sx={{ flexGrow: 1 }}>
-          <HomeLoggedin />
+          <ResponsiveAppBar />
       </Box>
     </ThemeProvider>
   )
