@@ -4,6 +4,7 @@ import IconButton from '@mui/material/IconButton';
 
 const Logo = () => {
     return (
+        <>
             <IconButton
                 variant="text"
                 color="inherit"
@@ -30,6 +31,23 @@ const Logo = () => {
 
                 EXTREME-III
             </IconButton>
+
+            <IconButton
+                color="inherit"
+                aria-label="logo name"
+                size="large"
+                href="/"
+                sx={{
+                    flexGrow: 0,
+                    display: { xs: 'flex', md: 'none' }
+                }}
+            >
+                <AgricultureIcon
+                    fontSize="large"
+                />
+            </IconButton>
+
+        </>
     )
 }
 
