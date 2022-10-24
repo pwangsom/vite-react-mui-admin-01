@@ -1,4 +1,4 @@
-import Navbar from "../../components/NavbarLoggedin"
+import NavbarLoggedin from "../../components/NavbarLoggedin"
 
 import React from 'react'
 import Box from '@mui/material/Box';
@@ -6,7 +6,7 @@ import Box from '@mui/material/Box';
 const HomeLoggedin = () => {
   return (
     <Box>
-        <Navbar />
+        <NavbarLoggedin />
     </Box>
   )
 }

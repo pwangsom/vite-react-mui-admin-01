@@ -13,7 +13,7 @@ function App() {
   return (
     <ThemeProvider theme={appTheme}>
       <Box sx={{ flexGrow: 1 }}>
-          <ResponsiveAppBar />
+          <HomeLoggedin />
       </Box>
     </ThemeProvider>
   )
