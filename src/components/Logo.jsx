@@ -1,12 +1,16 @@
 import React from 'react'
 import AgricultureIcon from '@mui/icons-material/Agriculture';
 import IconButton from '@mui/material/IconButton';
+import Button from '@mui/material/Button';
+
+const iconStyle = {
+    fontSize: '35px'
+};
 
 const Logo = () => {
     return (
         <>
-            <IconButton
-                variant="text"
+            <Button
                 color="inherit"
                 aria-label="logo name"
                 size="large"
@@ -18,19 +22,11 @@ const Logo = () => {
                     fontSize: '18px',
                     letterSpacing: '.1rem',
                     color: 'inherit',
-                }}
+                }}        
+                startIcon={<AgricultureIcon style={iconStyle} />}
             >
-
-                <AgricultureIcon
-                    fontSize="medium"
-                    sx={{
-                        mr: 1
-                    }}
-
-                />
-
                 EXTREME-III
-            </IconButton>
+            </Button>          
 
             <IconButton
                 color="inherit"
@@ -45,9 +41,9 @@ const Logo = () => {
                 <AgricultureIcon
                     fontSize="large"
                 />
-            </IconButton>
-
+            </IconButton>            
         </>
+      
     )
 }
 
