@@ -2,7 +2,6 @@ import * as React from 'react';
 
 import Home from './pages/home/Home'
 import HomeLoggedin from './pages/home/HomeLoggedin';
-import AppThemeMode from './components/AppThemeMode';
 
 import Box from '@mui/material/Box';
 import { ThemeProvider } from "@mui/material";
@@ -17,7 +16,7 @@ function App() {
   return (
     <ThemeProvider theme={ mode === "light" ? lightTheme : darkTheme }>
       <Box sx={{ flexGrow: 1}}>
-          <HomeLoggedin setMode={setMode} mode={mode} />
+          <HomeLoggedin mode={mode} setMode={setMode} />
       </Box>
     </ThemeProvider>  
   )

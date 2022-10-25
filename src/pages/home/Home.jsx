@@ -6,7 +6,7 @@ import Box from '@mui/material/Box';
 const Home = ({mode, setMode}) => {
   return (
     <Box>
-        <Navbar setMode={setMode} mode={mode} />
+        <Navbar mode={mode} setMode={setMode} />
     </Box>
   )
 }

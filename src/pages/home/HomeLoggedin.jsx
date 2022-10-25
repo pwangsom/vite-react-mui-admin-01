@@ -6,7 +6,7 @@ import Box from '@mui/material/Box';
 const HomeLoggedin = ({mode, setMode}) => {
   return (
     <Box>
-        <NavbarLoggedin setMode={setMode} mode={mode} />
+        <NavbarLoggedin mode={mode} setMode={setMode} />
     </Box>
   )
 }

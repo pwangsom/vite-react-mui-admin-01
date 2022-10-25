@@ -18,7 +18,7 @@ function Navbar({mode, setMode}) {
 
                     <Box sx={{ flexGrow: 1 }} />
 
-                    <ThemeMode setMode={setMode} mode={mode} />
+                    <ThemeMode  mode={mode} setMode={setMode} />
                     <Button color="inherit">Logout</Button>
                 </Toolbar>
             </AppBar>
